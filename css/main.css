@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* outline: 1px red solid; */
+}
+
+h1{
+    color: rgb(121, 5, 5);
+    font-family: 'monserrat-bold';
+    font-size: 20pt;
+    text-transform: uppercase;
+}
+h2{
+    color: rgb(121, 5, 5);
+    font-family: 'monserrat-bold';
+    font-size: 18pt;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3{
+    color: rgb(85, 8, 8);
+    font-family: 'monserrat-bold';
+    font-size: 13pt;
+    text-transform: capitalize;
+}
+
+h4{
+    color: rgb(75, 13, 13);
+    font-size: 10pt;
+    text-transform: capitalize;
+}
+
+h5{
+    color: rgb(189, 21, 21);
+    text-align: center;
+    text-decoration: underline;
+    font-family: "droid_serif_italic";
+}
+
+p{
+    font-size: 10pt;
+}
+
+a{
+    font-size: 10pt;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+
+nav .active {
+    background:  rgb(189, 21, 21);
+    color:white;
+    padding: 5px 10px;
+}
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+body header{
+    display: flex;
+    flex-direction:column;
+    background-color: rgba(19, 115, 224, 0.158);
+    
+}
+
+.nav-bar{
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0.603); 
+}
+
+body nav{
+    display: flex;
+    margin: 0 5%;
+    width: 90%;  
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30%;
+    border-radius:100%;
+}
+
+.logo img{
+    margin-right: 5%;
+    border-radius: 100%;
+    width: 70px; 
+}
+
+.nav-items{
+ padding: 0 10px;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a{
+    margin:0 27px;
+    color: rgb(189, 21, 21);
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+.navbar-toggler{
+    background: rgba(133, 176, 240, 0.685);
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    width: 70%;
+   justify-content: center;
+    align-items: flex-start; 
+    background: rgba(255, 255, 255, 0.356);
+ } 
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+footer{
+    display: flex;
+    background-image: url(../images/footer-bg.png);
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer h3{
+    margin:12px 0;
+}
+
+.footer h4{
+    font-size: 14pt;
+    margin: 7px;
+    font-style: italic;
+}
+
+.container > p{
+    margin-top: 35px;
+}
+footer .row div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pdf-doc{
+    display: flex;
+    width:120px;
+}
+
+.pdf-doc img{
+    width: 20px;
+    height: 24px;
+}
+
+.pdf-doc p{
+    color:black;
+    text-decoration: none;
+    margin-left:5px;
+}
+
+
+/*//////////////////////////////Media RULES/////////////////////////////*/
+
+@media(min-width: 768px) {
+    .nav-items{
+        margin-left: 0%;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        width: 50%;
+        justify-content: center;
+        align-items: flex-start; 
+    } 
+
+    h1{
+        color: rgb(121, 5, 5);
+        font-family: 'monserrat-bold';
+        font-size: 30pt;
+        text-transform: uppercase;
+    }
+
+    h2{
+        color: rgb(121, 5, 5);
+        font-family: 'monserrat-bold';
+        font-size: 25pt;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    h3{
+        color: rgb(85, 8, 8);
+        font-family: 'monserrat-bold';
+        font-size: 17pt;
+        text-transform: capitalize;
+    }
+
+    p{
+        font-size: 12pt;
+    }
+
+    a{
+        font-size: 12pt;
+    }
+
+    .footer h3{
+        margin: 12pt;
+    }
+
+   
+    
+}
+
+@media(min-width: 576px) {
+    .nav-item a span{
+        display: flex;
+        width: 100px;
+        justify-content: center;
+    }
+
+    .logo img{
+        margin-right: 5%;
+        width: 90px;
+        border-radius: 100%;
+    }
+
+    h1{
+        color: rgb(121, 5, 5);
+        font-family: 'monserrat-bold';
+        font-size: 25pt;
+        text-transform: uppercase;
+    }
+
+    h2{
+        color: rgb(121, 5, 5);
+        font-family: 'monserrat-bold';
+        font-size: 18pt;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    h3{
+        color: rgb(85, 8, 8);
+        font-family: 'monserrat-bold';
+        font-size: 15pt;
+        text-transform: capitalize;
+    }
+    
+    p{
+        font-size: 11pt;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+         padding: 20px;
+    }
+
+    .info{
+        padding: -40px 0;
+    }
+
+    .intro{
+    background: rgba(255, 255, 255, 0);
+    }
+}

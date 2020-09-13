@@ -1,0 +1,210 @@
+
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+.home-header {
+    background: rgba(31, 36, 46, 0.034) url('../images/nav-bg.png');
+    background-repeat: no-repeat;
+    background-size:70% auto;
+    background-position: 100% 0;
+    background-attachment: fixed;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+.timetable{
+    display: flex;
+    background-image: url("../images/departments-bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+}
+
+.timetable-container > div{
+    display: flex;
+    justify-content: center;
+}
+
+.timetable-block{
+    width: 300px; 
+    /* height: 200px;  */
+    background-color:rgba(88, 136, 226, 0.904);
+    border-radius: 5px;
+    padding: 10px;
+    margin:5px 0;
+}
+
+.timetable-block > h3,
+.timetable-block > p{
+    color: white;
+}
+
+.timetable-block > a{
+    border:0.5px white solid;
+    color: white;
+    padding: 5px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+.choose-us{
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.advantages{
+    display: flex;
+    justify-content: space-around;
+}
+
+.advantages > div{
+    display: flex;
+    width:300px;
+    height: 120 px;
+    margin: 5px;
+    align-items: center;
+}
+
+.advantages > div > div{
+    border: 2px rgb(139, 169, 226) solid;
+    border-radius:100%;
+    margin-right: 10px;
+    width: 80px;
+    height:80px;
+}
+
+.advantages img{
+    display: flex;
+    width: 80px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+.departments{
+    display:flex;
+    flex-direction: column;
+    background-image: url("../images/departments-bg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+   
+    /* background-attachment: fixed; */
+}
+.about-departments{
+    width:100%;
+    background-color: rgba(118, 169, 236, 0.733);
+    border-radius: 5px;
+    padding: 15px 0;
+}
+
+.about-departments > h3{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.departments-info{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.departments-info > div{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.departments-info > div > a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px rgba(88, 136, 226, 0.904) solid;
+    border-radius: 5px;
+    background-color:rgba(88, 136, 226, 0.904);
+    padding: 10px;
+    width: 150px;
+}
+
+.departments-info > div > a:hover{
+    border: 1px rgba(85, 117, 177, 0.788) solid;
+    background-color:rgba(85, 117, 177, 0.788);
+}
+
+.departments-info > div h4{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.icons{
+    width: 100px;
+    border-radius: 100%;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer h4{
+    font-size: 14pt;
+    margin: 12px;
+    font-style: italic;
+}
+
+.container > p{
+    margin-top: 40px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+
+.advantages > div{
+    display: flex;
+    width:300px;
+    height: 120 px;
+    margin: 5px;
+    align-items: center;
+}
+
+/*//////////////////////////////////////Media RULES/////////////////////////////////////*/
+
+@media(max-width: 1199px){
+    .home-header {   
+        background-size:80%;
+    }
+}
+ 
+@media(max-width: 992px) {
+    .home-header {   
+        background-size:90%;
+    }
+}
+
+@media(max-width: 768px) {
+    .advantages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-header {   
+        background-size:100%;
+     }
+} 
+    
+@media(max-width: 576px) {
+    .home-header {   
+        background-size:100%;
+    } 
+    .timetable{
+        background-size: 100% 100%;
+}
+
+
+ 

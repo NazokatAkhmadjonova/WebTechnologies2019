@@ -1,0 +1,225 @@
+
+*{
+    padding:0 ;
+    margin: 0;
+    /* outline: 1px red solid; */
+}
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+.about-us-header {   
+    background:rgba(30, 36, 48, 0.034)url('../images/about-us-bg.png');
+    background-repeat: no-repeat;
+    background-size:65%;
+    background-position: 100% 0;
+    background-attachment: fixed;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+.history{
+    display: flex;
+    background:url(../images/departments-bg.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+}
+
+.history > div >div{
+    display: flex;
+    padding: 15px;
+    background: rgba(4, 92, 255, 0.705);
+    border-radius: 3px;
+}
+
+.history p {
+    color: white;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+.staff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.staff h2{
+    padding: 20px;
+}
+
+.gallery{
+    display: flex;
+   flex-direction: row;
+    border: 1px rgba(74, 74, 92, 0.247) solid;
+}
+
+#big{
+    display: flex;
+   
+}
+
+#small{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+#small>a{
+    display: flex;
+    margin: 8px 0; 
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+.staff-info{
+    display: flex;
+}
+
+.about-doctors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.staff-info img{
+    margin-left: -10px;
+    width: 160px;
+    border-radius: 100%;
+    border:3px rgba(0, 81, 255, 0.384) solid;
+}
+
+.staff-info h4{
+ font-size: 12pt;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 35px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+.info{
+    background: grey;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+.gallery-footer{
+    display:flex;
+    flex-direction: row;
+}
+
+
+/*//////////////////////////////////////Media RULES/////////////////////////////////////*/
+
+@media(max-width: 1199px){
+    .about-us-header {   
+        background-size:80%;
+    }
+
+    .gallery{
+        display: flex;
+       flex-direction: column;
+        border: 1px rgba(74, 74, 92, 0.247) solid;
+        width: 683px;
+
+    }
+
+    #small{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+ }
+
+@media(max-width: 992px) {
+   
+    .about-us-header {   
+        background-size:90%;
+    }
+   
+    .about-doctors:nth-of-type(even){
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .services-header {   
+        background-size:100%;
+    }
+
+    .gallery{
+        width: 530px;
+    }
+
+    #big img{
+        width:490px;
+    }
+
+}
+
+@media(max-width: 576px) {
+    .services-header { 
+        background-size:100%;
+    }
+
+    .gallery{
+        display: flex;
+        padding-left: 0px;
+        width: 350px;
+    }
+
+    #big img{
+        width:350px;
+         height: 229px;
+    }
+    
+    #small {
+        width:350px;
+       
+    }
+
+    .history{   
+        background-size:100% 100%;
+        
+    }
+    .about-doctors:nth-of-type(even){
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .about-doctors{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .about-doctors img {
+        margin: 10px 0 20px -40px;
+    }
+
+
+
+}

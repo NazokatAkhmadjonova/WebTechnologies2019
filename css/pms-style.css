@@ -1,0 +1,87 @@
+.pms-header {   
+   
+    background: rgba(177, 202, 236, 0.171) url('../images/pms-bg.png');
+    background-repeat: no-repeat;
+    background-size:70%;
+    background-position: 100% 0;
+    background-attachment: fixed;
+}
+
+.patients-info > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container>
+table{
+   
+    width:900px;
+    border: 2px black solid;
+    border-radius: 3px;
+    text-align:center;
+    display: none;
+}
+tr{
+    border:1px grey solid;
+}
+
+td{
+    border:1px grey solid;
+}
+button{
+    width: 900px;
+}
+
+/*//////////////////////////////////////Media RULES/////////////////////////////////////*/
+@media(max-width: 1199px){
+    .pms-header {   
+        background-size:80%;
+    }
+ }
+
+@media(max-width: 992px) {
+    .pms-header {   
+        background-size:90%;
+    }
+    .container>
+    table{
+   
+        width:500px;
+        border: 2px black solid;
+        border-radius: 3px;
+        text-align:center;
+        display: none;
+    }
+    
+    button{
+        width: 500px;
+    }
+    
+ }
+ 
+ @media(max-width: 768px) {
+    .pms-header {   
+        background-size:100%;
+    }
+ }
+ 
+ @media(max-width: 576px) {
+    .pms-header {   
+        background-size:100%;
+        
+    }
+    .container>
+    table{
+   
+        width:300px;
+        border: 2px black solid;
+        border-radius: 3px;
+        text-align:center;
+        display: none;
+    }
+    
+    button{
+        width: 300px;
+    }
+ }

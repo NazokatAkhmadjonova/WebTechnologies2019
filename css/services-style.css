@@ -1,0 +1,258 @@
+.services-header {   
+    background: rgba(177, 202, 236, 0.171) url('../images/service-bg.png');
+    background-repeat: no-repeat;
+    background-size:70%;
+    background-position: 100% 0;
+    background-attachment: fixed;
+}
+
+.services-block > .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.services-block > .container > div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
+
+.services-block h2{
+    margin: 15px 0 20px;
+}
+
+.box{
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+}
+
+
+.hide-show{
+    display: flex;
+    justify-content: flex-end;
+    width: 40px; 
+}
+
+
+.service-title{
+    display: flex;
+	border:1px rgba(0, 81, 255, 0.384) solid;
+	border-radius: 3px;
+    padding: 5px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prices-list{
+    border:1px rgba(0, 81, 255, 0.384) solid;
+    border-radius: 3px;
+    display: none;
+}
+
+.prices-list > div{
+    display: flex;
+    border:1px rgba(0, 81, 255, 0.384) solid;
+   	width: 100%;
+    padding: 5px 10px;
+    justify-content: center;
+    margin-left:0px;
+}
+
+.service-active,
+.service-active:hover {
+    opacity: 0.5;
+    outline: 3px green solid;
+    transition: none;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width:250px;
+    background:rgba(177, 202, 236, 0.171);
+    padding: 10px;
+    float: right;
+    border-radius: 3px;
+}
+
+.btn_appoint{
+    height: 50px;
+    width: 220px;
+    background: rgb(5, 58, 5);
+    color: white;
+    text-transform: uppercase;
+    font-style: bold;
+}
+
+.rotate180{    
+    -ms-transform: rotate(180deg); 
+    -webkit-transform: rotate(180deg); 
+    -o-transform: rotate(180deg); 
+    -moz-transform: rotate(180deg); 
+    transform: rotate(180deg);
+}
+
+.amountOfMoney{
+    color: rgb(7, 44, 26);
+    font-size: 15pt;
+}
+
+/*//////////////////////////////////////////////STYLE FOR the FORM//////////////////////////////////////////////////////////////////*/
+.form-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  height:100vh;
+  background-image: url(../images/departments-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+} 
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px; 
+    height: 410px;
+    background: rgba(79, 91, 223, 0.466);
+    border-radius: 5px; 
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px; 
+    height: 360px;
+}
+
+form > input{
+    width: 360px;
+    border-radius: 3px;
+}
+form> button{
+    width: 360px;
+    height: 40px;
+    background: rgb(3, 68, 3);
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.form-box a{ 
+    color: white;
+    width: 360px;
+    height: 40px;
+    background: rgb(150, 150, 150);
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+input::placeholder{
+    padding-left: 10px;
+}
+
+
+
+/*//////////////////////////////////////Media RULES/////////////////////////////////////*/
+@media(max-width: 1199px){
+    .services-header {   
+        background-size:80%;
+    }
+    .form-page{
+        background-size: 100% 100%;
+      } 
+ }
+ 
+@media(max-width: 992px) {
+    .services-header {   
+        background-size:90%;
+    }
+ }
+ 
+@media(max-width: 768px) {
+    .services-header {   
+        background-size:100%; 
+    }
+
+    /*////////////Form page///////////////////*/
+    .form-page{
+      background-size: 100% 100%;
+    } 
+    
+    .form-box{ margin-left: 0px;
+        width: 350px; 
+    }
+
+    form{
+        width: 350px; 
+    }
+    
+    form > input,
+    form> button,
+    .form-box a{
+        width: 320px;
+        
+    }
+    
+ 
+@media(max-width: 576px) {
+    .services-block > .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box{
+    width:100%;
+    }
+
+    aside{
+        width: 100%; 
+    }
+
+    .row{
+        display: flex;
+        align-items: center;
+    }
+
+    .services-header {   
+        background-size:100%;
+    }
+
+    /*////////////Form page///////////////////*/
+
+    .form-page{
+        background-size: 100% 100%;
+      } 
+      
+    .form-box{
+        width: 300px; 
+    }
+    
+    form{
+        width: 300px;
+    }
+    
+    form > input,
+    form> button,
+    .form-box a{
+        width: 260px;
+    }
+  
+
+
+ }
+
+
+
+ 
+ 
+
+
